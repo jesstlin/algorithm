@@ -3,6 +3,9 @@
 //Input: courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]
 //Output: 3
 //Result: too slow
+//Time complexity : O(n*d)O(n∗d). memomemo array of size nnxdd is filled once. 
+//Here, nn refers to the number of courses in the given coursescourses array and 
+//dd refers to the maximum value of the end day from all the end days in the coursescourses array.
 class Schedule_Course_Recursive {
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, (a, b) -> a[1] - b[1]);
