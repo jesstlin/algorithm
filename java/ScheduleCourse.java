@@ -1,4 +1,5 @@
-//Leetcode
+package com.leetcode.medium;
+
 //630. Course Schedule III
 //Input: courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]
 //Output: 3
@@ -6,7 +7,7 @@
 //Time complexity : O(n*d)O(n∗d). memomemo array of size nnxdd is filled once. 
 //Here, nn refers to the number of courses in the given coursescourses array and 
 //dd refers to the maximum value of the end day from all the end days in the coursescourses array.
-class Schedule_Course_Recursive {
+class ScheduleCourseRecursive {
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, (a, b) -> a[1] - b[1]);
         Integer[][] memo = new Integer[ courses.length][courses[courses.length -1][1] + 1];
@@ -33,7 +34,7 @@ class Schedule_Course_Recursive {
 
 // Space complexity : O(1). Constant extra space is used.
 
-public class Schedule_Course_Iterative {
+public class ScheduleCourseIterative {
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, (a, b) -> a[1] - b[1]);
         int time = 0, count = 0;
@@ -65,7 +66,7 @@ public class Schedule_Course_Iterative {
 //Time complexity : O(nlogn). At most nn elements are added to the queuequeue. 
 //Adding each element is followed by heapification, which takes O(logn) time.
 //Space complexity : O(n). The queuequeue containing the durations of the courses taken can have atmost nn elements
-public class Schedule_Course_PriorityQueue {
+public class ScheduleCoursePriorityQueue {
     public int scheduleCourse(int[][] courses) {
         Arrays.sort(courses, (a, b) -> a[1] - b[1]);
         PriorityQueue < Integer > queue = new PriorityQueue < > ((a, b) -> b - a);
