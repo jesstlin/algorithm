@@ -16,7 +16,7 @@ package com.leetcode.medium;
 //Output: 2
 //Input: nums = [0]
 //Output: 0
-class JumpGame {
+class JumpGameII {
     public int jump(int[] nums) {
         int len = nums.length - 1, curr = -1, next = 0, jumps = 0;
         for (int i = 0; next < len; i++) {
