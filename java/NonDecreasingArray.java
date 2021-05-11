@@ -1,4 +1,4 @@
-package com.leetcode.medium
+package com.leetcode.medium;
 
 //665. Non-decreasing Array
 //Input: nums = [4,2,3]
