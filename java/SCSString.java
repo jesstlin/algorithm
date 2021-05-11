@@ -1,4 +1,4 @@
-
+package com.leetcode.hard
 //1092. Shortest Common Supersequence
 //
 //Given two strings str1 and str2, return the shortest string that has both str1 and str2 as subsequences.  
